@@ -1,0 +1,253 @@
+******* lambda means arriaval rate for each floor *******
+*******    result values are mean waiting time    *******
+
+
+analytical vs simulation:
+
+lambda=0.0020: analytical result: 145.37; simulation result: 185.52
+lambda=0.0025: analytical result: 200.34; simulation result: 232.25
+lambda=0.0030: analytical result: 244.56; simulation result: 272.79
+lambda=0.0035: analytical result: 277.02; simulation result: 298.86
+lambda=0.0040: analytical result: 300.20; simulation result: 321.1
+lambda=0.0045: analytical result: 316.76; simulation result: 333.21
+lambda=0.0050: analytical result: 328.71; simulation result: 345.63
+lambda=0.0055: analytical result: 337.41; simulation result: 352.81
+lambda=0.0060: analytical result: 343.84; simulation result: 357.89
+lambda=0.0065: analytical result: 348.62; simulation result: 361.1
+lambda=0.0070: analytical result: 352.21; simulation result: 364.25
+lambda=0.0075: analytical result: 354.92; simulation result: 367.41
+lambda=0.0080: analytical result: 356.99; simulation result: 368.76
+lambda=0.0085: analytical result: 358.57; simulation result: 369.65
+lambda=0.0090: analytical result: 359.79; simulation result: 369.96
+lambda=0.0095: analytical result: 360.72; simulation result: 371.42
+lambda=0.0100: analytical result: 361.45; simulation result: 371.96
+
+lambda=0.0110: analytical result: 362.44; simulation result: 372.71
+lambda=0.0120: analytical result: 363.05; simulation result: 373.18
+lambda=0.0130: analytical result: 363.42; simulation result: 373.29
+lambda=0.0140: analytical result: 363.64; simulation result: 373.55
+lambda=0.0150: analytical result: 363.78; simulation result: 373.26
+lambda=0.0160: analytical result: 363.86; simulation result: 373.38
+lambda=0.0170: analytical result: 363.92; simulation result: 373.41
+lambda=0.0180: analytical result: 363.95; simulation result: 373.35
+lambda=0.0190: analytical result: 363.97; simulation result: 373.17
+lambda=0.0200: analytical result: 363.98; simulation result: 373.20
+lambda=0.0210: analytical result: 363.99; simulation result: 373.24
+lambda=0.0220: analytical result: 363.99; simulation result: 373.29
+lambda=0.0230: analytical result: 364.00; simulation result: 373.33
+lambda=0.0240: analytical result: 364.00; simulation result: 373.40
+lambda=0.0250: analytical result: 364.00; simulation result: 373.29
+lambda=0.0260: analytical result: 364.00; simulation result: 373.35
+lambda=0.0270: analytical result: 364.00; simulation result: 373.28
+lambda=0.0280: analytical result: 364.00; simulation result: 373.32
+lambda=0.0290: analytical result: 364.00; simulation result: 373.28
+lambda=0.0300: analytical result: 364.00; simulation result: 373.32
+
+
+
+
+
+
+
+
+(2 general) vs (1 low & 1 high)
+
+lambda=0.0050
+2 general: 200.34
+1 low & 1 high: low 91.57, high 149.65, overall 119.23
+
+lambda=0.0060
+2 general: 244.56
+1 low & 1 high: low 119.21, high 166.33, overall 141.65
+
+lambda=0.0070
+2 general: 277.02
+1 low & 1 high: low 137.83, high 178.38, overall 157.14
+
+lambda=0.0080
+2 general: 300.20
+1 low & 1 high: low 150.59, high 186.97, overall 167.91
+
+lambda=0.0090
+2 general: 316.76
+1 low & 1 high: low 159.49, high 193.10, overall 175.49
+
+lambda=0.0100
+2 general: 328.71
+1 low & 1 high: low 165.81, high 197.51, overall 180.90
+
+lambda=0.0110
+2 general: 337.41
+1 low & 1 high: low 170.37, high 200.71, overall 184.82
+
+lambda=0.0120
+2 general: 343.84
+1 low & 1 high: low 173.71, high 203.05, overall 187.68
+
+lambda=0.0130
+2 general: 348.62
+1 low & 1 high: low 176.18, high 204.78, overall 189.80
+
+lambda=0.0140
+2 general: 352.21
+1 low & 1 high: low 178.02, high 206.06, overall 191.37
+
+lambda=0.0150
+2 general: 354.92
+1 low & 1 high: low 179.41, high 207.02, overall 192.56
+
+lambda=0.0160
+2 general: 356.99
+1 low & 1 high: low 180.47, high 207.74, overall 193.45
+
+lambda=0.0170
+2 general: 358.57
+1 low & 1 high: low 181.27, high 208.28, overall 194.13
+
+lambda=0.0180
+2 general: 359.79
+1 low & 1 high: low 181.89, high 208.69, overall 194.65
+
+lambda=0.0190
+2 general: 360.72
+1 low & 1 high: low 182.36, high 209.00, overall 195.05
+
+lambda=0.0200
+2 general: 361.45
+1 low & 1 high: low 182.72, high 209.24, overall 195.35
+
+lambda=0.0210
+2 general: 362.01
+1 low & 1 high: low 183.01, high 209.42, overall 195.58
+
+lambda=0.0220
+2 general: 362.44
+1 low & 1 high: low 183.23, high 209.55, overall 195.76
+
+lambda=0.0230
+2 general: 362.78
+1 low & 1 high: low 183.40, high 209.66, overall 195.90
+
+lambda=0.0240
+2 general: 363.05
+1 low & 1 high: low 183.53, high 209.74, overall 196.01
+
+lambda=0.0250
+2 general: 363.25
+1 low & 1 high: low 183.63, high 209.80, overall 196.09
+
+
+
+
+
+
+
+
+
+
+
+
+
+# if lambdas for each floors are different
+
+
+
+lambda_low=0.0050; lambda_high=0.0050
+2 general: 200.34
+1 low & 1 high: low 91.57, high 149.65, overall 119.23
+
+lambda_low=0.0050; lambda_high=0.0055
+2 general: 213.05
+1 low & 1 high: low 91.57, high 158.64, overall 125.10
+
+lambda_low=0.0050; lambda_high=0.0060
+2 general: 224.56
+1 low & 1 high: low 91.57, high 166.33, overall 130.57
+
+lambda_low=0.0050; lambda_high=0.0065
+2 general: 234.95
+1 low & 1 high: low 91.57, high 172.86, overall 135.60
+
+lambda_low=0.0050; lambda_high=0.0070
+2 general: 244.28
+1 low & 1 high: low 91.57, high 178.38, overall 140.18
+
+lambda_low=0.0050; lambda_high=0.0075
+2 general: 252.65
+1 low & 1 high: low 91.57, high 183.04, overall 144.34
+
+lambda_low=0.0050; lambda_high=0.0080
+2 general: 260.15
+1 low & 1 high: low 91.57, high 186.97, overall 148.10
+
+lambda_low=0.0050; lambda_high=0.0085
+2 general: 266.87
+1 low & 1 high: low 91.57, high 190.29, overall 151.50
+
+lambda_low=0.0050; lambda_high=0.0090
+2 general: 272.89
+1 low & 1 high: low 91.57, high 193.10, overall 154.59
+
+lambda_low=0.0050; lambda_high=0.0095
+2 general: 278.29
+1 low & 1 high: low 91.57, high 195.48, overall 157.38
+
+lambda_low=0.0050; lambda_high=0.0100
+2 general: 283.14
+1 low & 1 high: low 91.57, high 197.51, overall 159.92
+
+lambda_low=0.0050; lambda_high=0.0105
+2 general: 287.49
+1 low & 1 high: low 91.57, high 199.23, overall 162.22
+
+lambda_low=0.0050; lambda_high=0.0110
+2 general: 291.42
+1 low & 1 high: low 91.57, high 200.71, overall 164.33
+
+lambda_low=0.0050; lambda_high=0.0115
+2 general: 294.96
+1 low & 1 high: low 91.57, high 201.97, overall 166.25
+
+lambda_low=0.0050; lambda_high=0.0120
+2 general: 298.16
+1 low & 1 high: low 91.57, high 203.05, overall 168.01
+
+lambda_low=0.0050; lambda_high=0.0125
+2 general: 301.05
+1 low & 1 high: low 91.57, high 203.98, overall 169.63
+
+lambda_low=0.0050; lambda_high=0.0130
+2 general: 303.68
+1 low & 1 high: low 91.57, high 204.78, overall 171.12
+
+lambda_low=0.0050; lambda_high=0.0135
+2 general: 306.07
+1 low & 1 high: low 91.57, high 205.46, overall 172.49
+
+lambda_low=0.0050; lambda_high=0.0140
+2 general: 308.25
+1 low & 1 high: low 91.57, high 206.06, overall 173.77
+
+lambda_low=0.0050; lambda_high=0.0145
+2 general: 310.24
+1 low & 1 high: low 91.57, high 206.57, overall 174.95
+
+lambda_low=0.0050; lambda_high=0.0150
+2 general: 312.06
+1 low & 1 high: low 91.57, high 207.02, overall 176.04
+
+
+
+
+
+
+conclusion:
+1: analytical results are similar to simulation, which means our equations are correct.
+2: split elevator into 2 group is a right way. It saves time. 
+3: when lambda for high floor is much greater than low floor, the service time for (those who want to go to high floor) is much larger than (those who want to go to low floor). However, the overall time spending of (1 low & 1 high) is still less than (2 general).
+
+
+
+
+
+
